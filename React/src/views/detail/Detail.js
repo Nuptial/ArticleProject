@@ -26,6 +26,11 @@ function Detail(props) {
 
   return (
     <div className="detail-container">
+      <Link to="/">
+        <div className="back-to-listing-button">
+          <FontAwesomeIcon icon={faArrowLeft} className="icon" />
+        </div>
+      </Link>
       {emptyData ? (
         <div>Not Found...</div>
       ) : !Object.keys(selectedArticle).length ? (
@@ -47,11 +52,6 @@ function Detail(props) {
           </p>
         </div>
       )}
-      <Link to="/">
-        <div className="back-to-listing-button">
-          <FontAwesomeIcon icon={faArrowLeft} className="icon" />
-        </div>
-      </Link>
     </div>
   );
 }
