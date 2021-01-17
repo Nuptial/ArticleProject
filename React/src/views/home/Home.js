@@ -4,7 +4,7 @@ import Pagination from '../../components/pagination/pagination';
 import Loader from "react-loader-spinner";
 import "./Home.sass";
 
-function Home() {
+const Home = () => {
   const reqUrl = "http://localhost:1337/articles";
   let [activePage, setActivePage] = useState(1);
   const [articles, setArticles] = useState([]);

@@ -5,7 +5,7 @@ import Detail from './views/detail/Detail';
 import NotFound from './views/not-found/NotFound';
 import './App.sass';
 
-function App() {
+const App = () => {
   return (
     <Router>
       <Switch>

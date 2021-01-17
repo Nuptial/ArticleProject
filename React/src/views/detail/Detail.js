@@ -7,7 +7,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Detail.sass";
 
-function Detail(props) {
+const Detail = (props) => {
   const selectedArticleId = props.match.params.id;
   const reqUrl = `http://localhost:1337/articles/${selectedArticleId}`;
   const [selectedArticle, setSelectedArticle] = useState({});
